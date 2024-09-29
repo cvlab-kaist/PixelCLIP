@@ -69,7 +69,7 @@ We provide pretrained weights for our models reported in the paper. All of the m
 <td align="center">34.3</td>
 <td align="center">22.9</td>
 <td align="center">83.8</td>
-<td align="center"><a href="https://">ckpt</a>&nbsp;
+<td align="center"><a href="https://huggingface.co/hsshin98/PixelCLIP/resolve/main/weights/pixelclip_vit_base_dino.pth">ckpt</a>&nbsp;
 </tr>
 <!-- ROW: ViT-B/16/SA-1B -->
 <tr>
@@ -80,7 +80,7 @@ We provide pretrained weights for our models reported in the paper. All of the m
 <td align="center">37.9</td>
 <td align="center">27.2</td>
 <td align="center">85.9</td>
-<td align="center"><a href="https://">ckpt</a>&nbsp;
+<td align="center"><a href="https://huggingface.co/hsshin98/PixelCLIP/resolve/main/weights/pixelclip_vit_base.pth">ckpt</a>&nbsp;
 </tr>
 <!-- ROW: ConvNeXt-B/DINO -->
 <tr>
@@ -91,7 +91,7 @@ We provide pretrained weights for our models reported in the paper. All of the m
 <td align="center">32.7</td>
 <td align="center">30.0</td>
 <td align="center">62.9</td>
-<td align="center"><a href="https://">ckpt</a>&nbsp;
+<td align="center"><a href="https://huggingface.co/hsshin98/PixelCLIP/resolve/main/weights/pixelclip_convnext_base_dino.pth">ckpt</a>&nbsp;
 </tr>
 <!-- ROW: ConvNeXt-B/SA-1B -->
 <tr>
@@ -102,7 +102,7 @@ We provide pretrained weights for our models reported in the paper. All of the m
 <td align="center">35.4</td>
 <td align="center">34.8</td>
 <td align="center">67.2</td>
-<td align="center"><a href="https://">ckpt</a>&nbsp;
+<td align="center"><a href="https://huggingface.co/hsshin98/PixelCLIP/resolve/main/weights/pixelclip_convnext_base.pth">ckpt</a>&nbsp;
 </tr>
 </tbody></table>
 
