@@ -1,4 +1,4 @@
-# Prepare Datasets for CAT-Seg
+# Prepare Datasets for PixelCLIP
 
 A dataset can be used by accessing [DatasetCatalog](https://detectron2.readthedocs.io/modules/data.html#detectron2.data.DatasetCatalog)
 for its data, or [MetadataCatalog](https://detectron2.readthedocs.io/modules/data.html#detectron2.data.MetadataCatalog) for its metadata (class names, etc).
