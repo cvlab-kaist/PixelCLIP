@@ -102,7 +102,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -110,11 +110,11 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/cvlab-kaist/PixelCLIP" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -146,7 +146,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/figure.jpg" alt="Teaser image" class="teaser-image">
+      <img src="static/images/fig1_final.jpg" alt="Teaser image" class="teaser-image">
       <h2 class="content has-text-justified">
         In contrast to existing methods utilizing (a) pixel-level semantic labels or (b) image-level semantic labels, we leverage unlabeled masks as supervision, which can be freely generated from vision founcation models such as SAM and DINO.
       </h2>
@@ -196,7 +196,7 @@
           PixelCLIP utilizes unlabeled images and masks for fine-tuning the image encoder of CLIP, enabling open-vocabulary semantic segmentation. The momentum image encoder and the mask decoder are only leveraged during training, and inference is only done with image and text encoders of CLIP.
         </h2>
     <div class="hero-body">
-      <img src="static/images/architecture_noted.jpg" alt="Method image" class="method">
+      <img src="static/images/figure.jpg" alt="Method image" class="method">
     </div>
   </div>
 </section>
