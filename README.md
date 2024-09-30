@@ -2,7 +2,7 @@
 
 This is our official implementation of PixelCLIP!
 
-[[arXiv](https://cvlab-kaist.github.io/pixelclip/)] [[Project](https://cvlab-kaist.github.io/pixelclip/)] <br>
+[[arXiv](https://cvlab-kaist.github.io/PixelCLIP/)] [[Project](https://cvlab-kaist.github.io/PixelCLIP/)] <br>
 by [Heeseong Shin](https://scholar.google.com/citations?user=zu-I2fYAAAAJ), [Chaehyun Kim](https://kchyun.github.io/), [Sunghwan Hong](https://sunghwanhong.github.io), [Seokju Cho](https://seokju-cho.github.io/), [Anurag Arnab](https://anuragarnab.github.io)\$$^\dagger$$, [Paul Hongsuck Seo](https://phseo.github.io)\$$^\dagger$$, [Seungryong Kim](https://cvlab.kaist.ac.kr)\$$^\dagger$$ <br>
 ($$^\dagger$$: Corresponding authors)
 
