@@ -1,7 +1,0 @@
-_BASE_: pixelclip_vit_base.yaml
-MODEL:
-  EPS: 1.0
-  CLIP_RESOLUTION: (640, 640)
-  SEM_SEG_HEAD:
-    CLIP_PRETRAINED: "convnext_base"
-    CLIP_FINETUNE: "full"

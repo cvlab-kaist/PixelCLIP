@@ -1,114 +1,48 @@
-# Towards Open-Vocabulary Semantic Segmentation without Semantic Labels [NeurIPS 2024]
-
-This is our official implementation of PixelCLIP!
-
-[[arXiv](https://cvlab-kaist.github.io/pixelclip/)] [[Project](https://cvlab-kaist.github.io/pixelclip/)] <br>
-by [Heeseong Shin](https://scholar.google.com/citations?user=zu-I2fYAAAAJ), [Chaehyun Kim](https://kchyun.github.io/), [Sunghwan Hong](https://sunghwanhong.github.io), [Seokju Cho](https://seokju-cho.github.io/), [Anurag Arnab](https://anuragarnab.github.io)\+, [Paul Hongsuck Seo](https://phseo.github.io)\+, [Seungryong Kim](https://cvlab.kaist.ac.kr)\+ <br>
-(+: Corresponding authors)
-
-## Introduction
-![](assets/fig1.jpg)
-In contrast to existing methods utilizing (a) pixel-level semantic labels or (b) image-level semantic labels, we leverage unlabeled masks as supervision, which can be freely generated from vision founcation models such as SAM and DINO.
-
-For further details and visualization results, please check out our [paper](https://cvlab-kaist.github.io/pixelclip/) and our [project page](https://cvlab-kaist.github.io/pixelclip/).
-
-## Installation
-Please follow [installation](INSTALL.md). 
-
-## Data Preparation
-Please follow [dataset preperation](datasets/README.md).
-
-## Training
-We provide shell scripts for training and evaluation. ```run.py``` trains the model in default configuration and evaluates the model after training. 
-
-To train or evaluate the model in different environments, modify the given shell script and config files accordingly.
-
-### Training script
-```bash
-sh run.sh [CONFIG] [NUM_GPUS] [OUTPUT_DIR] [OPTS]
-
-# With SA-1B Masks
-sh run.sh configs/pixelclip_vit_base.yaml 4 output/
-# With DINO Masks
-sh run.sh configs/pixelclip_vit_base.yaml 4 output/ MODEL.DINO True
-```
-
-## Evaluation
-```eval.sh``` automatically evaluates the model following our evaluation protocol, with weights in the output directory if not specified.
-To individually run the model in different datasets, please refer to the commands in ```eval.sh```.
-
-### Evaluation script
-```bash
-sh run.sh [CONFIG] [NUM_GPUS] [OUTPUT_DIR] [OPTS]
-
-sh eval.sh configs/pixelclip_vit_base.yaml 4 output/ MODEL.WEIGHTS path/to/weights.pth
-```
+# Academic Project Page Template
+This is an academic paper project page template.
 
 
-## Pretrained Models
-We provide pretrained weights for our models reported in the paper. All of the models were trained and evaluated with 4 NVIDIA A6000 GPUs, and can be reproduced with the evaluation script above.
-
-<table><tbody>
-<!-- START TABLE -->
-<!-- TABLE HEADER -->
-<th valign="bottom">Backbone</th>
-<th valign="bottom">Masks</th>
-<th valign="bottom">COCO-Stuff</th>
-<th valign="bottom">ADE-150</th>
-<th valign="bottom">Pascal-Context</th>
-<th valign="bottom">CityScapes</th>
-<th valign="bottom">Pascal-VOC</th>
-<th valign="bottom">Download</th>
-<!-- TABLE BODY -->
-<!-- ROW: ViT-B/16/DINO -->
-<tr>
-<td align="left">CLIP ViT-B/16</a></td>
-<td align="left">DINO</td>
-<td align="center">22.2</td>
-<td align="center">17.4</td>
-<td align="center">34.3</td>
-<td align="center">22.9</td>
-<td align="center">83.8</td>
-<td align="center"><a href="https://">ckpt</a>&nbsp;
-</tr>
-<!-- ROW: ViT-B/16/SA-1B -->
-<tr>
-<td align="left">CLIP ViT-B/16</a></td>
-<td align="left">SA-1B</td>
-<td align="center">23.6</td>
-<td align="center">18.7</td>
-<td align="center">37.9</td>
-<td align="center">27.2</td>
-<td align="center">85.9</td>
-<td align="center"><a href="https://">ckpt</a>&nbsp;
-</tr>
-<!-- ROW: ConvNeXt-B/DINO -->
-<tr>
-<td align="left">OpenCLIP ConvNeXt-B</a></td>
-<td align="left">DINO</td>
-<td align="center">20.2</td>
-<td align="center">19.4</td>
-<td align="center">32.7</td>
-<td align="center">30.0</td>
-<td align="center">62.9</td>
-<td align="center"><a href="https://">ckpt</a>&nbsp;
-</tr>
-<!-- ROW: ConvNeXt-B/SA-1B -->
-<tr>
-<td align="left">OpenCLIP ConvNeXt-B</a></td>
-<td align="left">SA-1B</td>
-<td align="center">21.4</td>
-<td align="center">20.3</td>
-<td align="center">35.4</td>
-<td align="center">34.8</td>
-<td align="center">67.2</td>
-<td align="center"><a href="https://">ckpt</a>&nbsp;
-</tr>
-</tbody></table>
+Example project pages built using this template are:
+- https://vision.huji.ac.il/spectral_detuning/
+- https://vision.huji.ac.il/podd/
+- https://dreamix-video-editing.github.io
+- https://vision.huji.ac.il/conffusion/
+- https://vision.huji.ac.il/3d_ads/
+- https://vision.huji.ac.il/ssrl_ad/
+- https://vision.huji.ac.il/deepsim/
 
 
-## Citing PixelCLIP
 
-```BibTeX
-#
-```
+## Start using the template
+To start using the template click on `Use this Template`.
+
+The template uses html for controlling the content and css for controlling the style. 
+To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
+
+**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
+
+## Components
+- Teaser video
+- Images Carousel
+- Youtube embedding
+- Video Carousel
+- PDF Poster
+- Bibtex citation
+
+## Tips:
+- The `index.html` file contains comments instructing you what to replace, you should follow these comments.
+- The `meta` tags in the `index.html` file are used to provide metadata about your paper 
+(e.g. helping search engine index the website, showing a preview image when sharing the website, etc.)
+- The resolution of images and videos can usually be around 1920-2048, there rarely a need for better resolution that take longer to load. 
+- All the images and videos you use should be compressed to allow for fast loading of the website (and thus better indexing by search engines). For images, you can use [TinyPNG](https://tinypng.com), for videos you can need to find the tradeoff between size and quality.
+- When using large video files (larger than 10MB), it's better to use youtube for hosting the video as serving the video from the website can take time.
+- Using a tracker can help you analyze the traffic and see where users came from. [statcounter](https://statcounter.com) is a free, easy to use tracker that takes under 5 minutes to set up. 
+- This project page can also be made into a github pages website.
+- Replace the favicon to one of your choosing (the default one is of the Hebrew University). 
+- Suggestions, improvements and comments are welcome, simply open an issue or contact me. You can find my contact information at [https://pages.cs.huji.ac.il/eliahu-horwitz/](https://pages.cs.huji.ac.il/eliahu-horwitz/)
+
+## Acknowledgments
+Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
+
+## Website License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
