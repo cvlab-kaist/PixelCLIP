@@ -2,7 +2,7 @@
 
 This is our official implementation of PixelCLIP!
 
-[[arXiv](https://cvlab-kaist.github.io/PixelCLIP/)] [[Project](https://cvlab-kaist.github.io/PixelCLIP/)] <br>
+[[arXiv](https://arxiv.org/abs/2409.19846)] [[Project](https://cvlab-kaist.github.io/PixelCLIP/)] <br>
 by [Heeseong Shin](https://scholar.google.com/citations?user=zu-I2fYAAAAJ), [Chaehyun Kim](https://kchyun.github.io/), [Sunghwan Hong](https://sunghwanhong.github.io), [Seokju Cho](https://seokju-cho.github.io/), [Anurag Arnab](https://anuragarnab.github.io)\$$^\dagger$$, [Paul Hongsuck Seo](https://phseo.github.io)\$$^\dagger$$, [Seungryong Kim](https://cvlab.kaist.ac.kr)\$$^\dagger$$ <br>
 ($$^\dagger$$: Corresponding authors)
 
@@ -110,5 +110,13 @@ We provide pretrained weights for our models reported in the paper. All of the m
 ## Citing PixelCLIP
 
 ```BibTeX
-#
+@misc{shin2024openvocabularysemanticsegmentationsemantic,
+      title={Towards Open-Vocabulary Semantic Segmentation Without Semantic Labels}, 
+      author={Heeseong Shin and Chaehyun Kim and Sunghwan Hong and Seokju Cho and Anurag Arnab and Paul Hongsuck Seo and Seungryong Kim},
+      year={2024},
+      eprint={2409.19846},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2409.19846}, 
+}
 ```
