@@ -8,7 +8,7 @@ by [Heeseong Shin](https://scholar.google.com/citations?user=zu-I2fYAAAAJ), [Cha
 
 ## Introduction
 ![](assets/fig1.jpg)
-In contrast to existing methods utilizing (a) pixel-level semantic labels or (b) image-level semantic labels, we leverage unlabeled masks as supervision, which can be freely generated from vision founcation models such as SAM and DINO.
+In contrast to existing methods utilizing (a) pixel-level semantic labels or (b) image-level semantic labels, we leverage unlabeled masks as supervision, which can be freely generated from vision foundation models such as SAM and DINO.
 
 For further details and visualization results, please check out our [paper](https://cvlab-kaist.github.io/pixelclip/) and our [project page](https://cvlab-kaist.github.io/pixelclip/).
 
