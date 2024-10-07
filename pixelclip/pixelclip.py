@@ -149,14 +149,6 @@ class PixelCLIP(nn.Module):
         
         clip_images_student = F.interpolate(student_images, size=self.student_res, mode='bilinear', align_corners=False, )
         clip_feat = self.sem_seg_head(clip_images_student, dense=True)
-
-        # if clip_features.dim() == 3:
-        #     width = int((clip_features.shape[1] - 1) ** 0.5)
-        #     clip_feat = clip_features[:, 1:, :].reshape(clip_features.shape[0], width, width, -1).permute(0, 3, 1, 2)
-        # else:
-        #     clip_feat = clip_features
-        
-        #clip_feat = clip_feat.permute(0, 2, 3, 1)
         clip_feat_normalized = F.normalize(clip_feat, dim=-1)
 
         if self.training:

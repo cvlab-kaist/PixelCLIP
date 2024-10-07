@@ -321,10 +321,10 @@ class VisualTransformer(nn.Module):
 
         if self.proj is not None:
             x = x @ self.proj
-        
+            
         if x.dim() == 3:
             b = x.shape[0]
-            x = x[:, 1:, :].reshape(b, int(x.shape[1] ** 0.5), int(x.shape[1] ** 0.5), -1).permute(0, 3, 1, 2)
+            x = x[:, 1:, :].reshape(b, int(x.shape[1] ** 0.5), int(x.shape[1] ** 0.5), -1)
         return x
 
     def resized_pos_embed(self, in_res, tgt_res, mode="bicubic"):

@@ -160,15 +160,7 @@ class PixelCLIPPredictor(nn.Module):
         return ret
 
     def forward(self, x, dense=True):
-        clip_features = self.clip_model.encode_image(x, dense=dense)
-        
-        if clip_features.dim() == 3:
-            width = int((clip_features.shape[1] - 1) ** 0.5)
-            clip_feat = clip_features[:, 1:, :].reshape(clip_features.shape[0], width, width, -1).permute(0, 3, 1, 2)
-        else:
-            clip_feat = clip_features
-            
-        return clip_feat
+        return self.clip_model.encode_image(x, dense=dense)
 
     @torch.no_grad()
     def class_embeddings(self, classnames, templates, clip_model):
